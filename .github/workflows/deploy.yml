@@ -14,14 +14,14 @@ on:
     branches:
       - main
 
-  #작업들
-  jobs:
-    #작업명
-    test:
-      #작업 환경
-      runs-on: ubuntu-latest
-      #작업들을 순서에 맞춰서 작성
-      steps:
-        #작업명은 testing이고
-        - name: "testing"
-          run: echo "now test"
+# 작업들
+jobs:
+  # 작업명
+  test:
+    #작업 환경
+    runs-on: ubuntu-latest
+    #작업들을 순서에 맞춰서 작성
+    steps:
+      #작업명은 testing이고
+      - name: "testing"
+        run: echo "now test"
