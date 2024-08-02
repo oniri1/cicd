@@ -24,4 +24,4 @@ on:
       steps:
         #작업명은 testing이고
         - name: "testing"
-            run: echo "now test"
+          run: echo "now test"
