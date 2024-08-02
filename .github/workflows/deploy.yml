@@ -1,1 +1,27 @@
 # XML을 대체하는 문서 / YML, YXML
+#액션에 대한 이름
+# Tap을 기준으로 영역을 나누기 때문에 잘 해야한다.
+
+name: Deploy React to EC2
+
+# 메인 브랜치에 푸쉬가 되었을 때(on) , push를 merge, rebase등으로도 바꿀 수 있다.
+
+# 했을 때
+on:
+  # push 했을 때
+  push:
+    # 메인 브랜치에
+    branches:
+      - main
+
+  #작업들
+  jobs:
+    #작업명
+    test:
+      #작업 환경
+      runs-on: ubuntu-latest
+      #작업들을 순서에 맞춰서 작성
+      steps:
+        #작업명은 testing이고
+        - name: "testing"
+            run: echo "now test"
